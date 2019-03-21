@@ -1,0 +1,13 @@
+<div id="header-menu">
+  <button #button mat-flat-button [matMenuTriggerFor]="appMenu"
+    #appMenuTrigger="matMenuTrigger" (mouseenter)="appMenuTrigger.openMenu()">
+    Main Menu
+  </button>
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item >Homepage</button>
+    <button mat-menu-item >Contact</button>
+  </mat-menu>
+</div>
+<div id="header-user">
+  <mat-icon>account_circle</mat-icon><span>Your name</span>
+</div>

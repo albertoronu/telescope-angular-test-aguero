@@ -1,0 +1,34 @@
+<div class="contact">
+  <h2>Contact us!</h2>
+  <mat-card>
+    <mat-card-content>
+      <form>
+        <mat-form-field class="field-2-width">
+          <input matInput placeholder="First Name">
+        </mat-form-field>
+        <mat-form-field class="field-2-width">
+          <input matInput placeholder="Last Name">
+        </mat-form-field>
+        <mat-form-field class="field-1-width">
+          <textarea matInput placeholder="Address" value="Carrer del Roselló, 25"></textarea>
+        </mat-form-field>
+        <mat-form-field class="field-1-width">
+          <textarea matInput placeholder="Address 2"></textarea>
+        </mat-form-field>
+        <mat-form-field class="field-3-width">
+          <input matInput placeholder="City">
+        </mat-form-field>
+        <mat-form-field class="field-3-width">
+          <input matInput placeholder="State">
+        </mat-form-field>
+        <mat-form-field class="field-3-width">
+          <input matInput #inputPostalCode maxlength="5" placeholder="Postal Code" value="08029">
+          <mat-hint align="end">{{inputPostalCode.value?.length || 0}}/5</mat-hint>
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  <button mat-flat-button>
+    Send
+  </button>
+</div>

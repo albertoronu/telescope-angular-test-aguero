@@ -1,0 +1,40 @@
+.contact {
+  margin: auto;
+  width: 600px;
+  padding: 15px 10px;
+}
+
+h2 {
+  margin: 30px 0;
+  color: #78cad8;
+}
+
+.mat-card {
+  background-color: #EEE;
+  display: inline-block;
+}
+
+.field-1-width {
+  width: 80%;
+  padding: 0 1px;
+  float: left;
+}
+
+.field-2-width {
+  width: 40%;
+  padding: 0 1px;
+  float: left;
+}
+
+.field-3-width {
+  width: 32%;
+  padding: 0 1px;
+  float: left;
+}
+
+button {
+  margin-top: 20px;
+  float: right;
+  background-color: #78cad8;
+  color: #FFF;
+}

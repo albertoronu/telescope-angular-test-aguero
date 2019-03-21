@@ -13,16 +13,8 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  private handleError<T> (operation = 'operation', result?: T) {
-    return (error: any): Observable<T> => {
 
-      console.error(error);
-
-      return of(result as T);
-    };
-  }
-
-  getUsers (): Observable<Users[]> {
-    }
+  //getUsers (): Observable<Users[]> {
+//    }
 
 }

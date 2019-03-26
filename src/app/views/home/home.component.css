@@ -19,3 +19,14 @@ button {
   background-color: #78cad8;
   color: #FFF;
 }
+
+table {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.mat-header-cell {
+  text-align: center!important;
+}

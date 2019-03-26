@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../../service/api.service';
+import { Users } from 'src/app/model/users';
 
 @Component({
   selector: 'app-home',
@@ -7,15 +9,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  showButton: boolean = true;
+  showButton = true;
 
-  constructor() { }
+  constructor(public apiService: ApiService) { }
+
+  displayedColumns: string[] = ['id', 'name', 'username', 'website'];
+  dataSource: Users[];
 
   ngOnInit() {
   }
 
   showTable(): void {
     this.showButton = false;
+    this.apiService.getUsers().subscribe(
+      (data: any) => {
+        this.dataSource = data;
+      },
+      err => console.error(err)
+    );
   }
 
+}
+
+export interface Users {
+  id: number;
+  name: string;
+  username: string;
+  website: string;
 }
